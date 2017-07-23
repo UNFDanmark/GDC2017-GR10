@@ -22,9 +22,9 @@ GameObject:
   - 33: {fileID: 33000012017630480}
   - 65: {fileID: 65000011621403812}
   - 23: {fileID: 23000012386118334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KnottenBoks
-  m_TagString: Untagged
+  m_TagString: KnottenBoks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -10,10 +10,12 @@ public class Player : MonoBehaviour{
     public float turnSpeed = 90;
     public float moveSpeed = 10;
     public Rigidbody myRigid;
-    private bool MyParent = false;
+    public float timeOfLastPickUp = 0;
+    public float reloadTime = 0.5f;
 
-	// Use this for initialization
-	void Start ()
+
+    // Use this for initialization
+    void Start ()
     {
         Rigidbody myRigid = GetComponent<Rigidbody>();
 	}
@@ -35,6 +37,7 @@ public class Player : MonoBehaviour{
 
     public void Move(float speed)
     {
+        
         myRigid.velocity = transform.forward * speed + Vector3.up * myRigid.velocity.y;
     }
 
@@ -48,12 +51,19 @@ public class Player : MonoBehaviour{
             KnottenBoks.transform.parent = PlayerParent.transform;
  
         }
+        if (collision.gameObject.CompareTag("KnottenBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
+        {
+            KnottenBoks.transform.parent = PlayerParent.transform;
+            
 
-       
+        }
+
+
     }
     public void DetachFromParent()
     {
         KnottenBoks.transform.parent = null;
+        timeOfLastPickUp = Time.time;
     }
 
 

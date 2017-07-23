@@ -103,7 +103,7 @@ GameObject:
   - 65: {fileID: 768782774}
   - 23: {fileID: 768782773}
   - 114: {fileID: 768782772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Knotten
   m_TagString: Knotten
   m_Icon: {fileID: 0}
@@ -235,6 +235,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010735549244, guid: 67c885c49a1201144ba9d05919d3aafb, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67c885c49a1201144ba9d05919d3aafb, type: 2}
   m_IsPrefabParent: 0
@@ -269,6 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50a304d077d6aea4ca388cef414abff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KnottenBoks: {fileID: 0}
   PlayerParent: {fileID: 946248148}
   KnottenBoksPrefab: {fileID: 1000010620799096, guid: b49e59cfe9ba9164286e29855724e8b4,
     type: 2}
@@ -276,6 +281,8 @@ MonoBehaviour:
   turnSpeed: 90
   moveSpeed: 10
   myRigid: {fileID: 946248150}
+  timeOfLastPickUp: 0
+  reloadTime: 1
 --- !u!54 &946248150
 Rigidbody:
   m_ObjectHideFlags: 0
