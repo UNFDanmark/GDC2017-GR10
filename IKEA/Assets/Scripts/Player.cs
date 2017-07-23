@@ -4,7 +4,7 @@ using System.Collections;
 public class Player : MonoBehaviour
 {
 
-    public float turnSpeed = 30;
+    public float turnSpeed = 90;
     public float moveSpeed = 10;
     public Rigidbody myRigid;
 
@@ -17,16 +17,18 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        Move();
-	}
-
-    public void Move ()
-    {
-        transform.Translate(0, 0, moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"));
+        transform.Rotate(0, turnSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0);
     }
 
-    public void Turn ()
+    void FixedUpdate()
     {
-        transform.rotation(0, 0, 0);
+        Move(moveSpeed * Input.GetAxis("Vertical"));
     }
+
+    public void Move(float speed)
+    {
+        myRigid.velocity = transform.forward * speed + Vector3.up * myRigid.velocity.y;
+    }
+
+
 }
