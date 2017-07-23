@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Player : MonoBehaviour{
 
+    public GameObject KnottenBoks;
     public GameObject PlayerParent;
     public GameObject KnottenBoksPrefab;
     public GameObject Knotten;
@@ -21,6 +22,10 @@ public class Player : MonoBehaviour{
 	void Update ()
     {
         transform.Rotate(0, turnSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0);
+        if (Input.GetKeyDown("space"))
+        {
+            DetachFromParent();
+        }
     }
 
     void FixedUpdate()
@@ -39,22 +44,18 @@ public class Player : MonoBehaviour{
         if (collision.gameObject.CompareTag("Knotten"))
         {
             Destroy(Knotten);
-            GameObject KnottenBoks = Instantiate(KnottenBoksPrefab);
-            MyParent = true;
+            KnottenBoks = Instantiate(KnottenBoksPrefab);
+            KnottenBoks.transform.parent = PlayerParent.transform;
+ 
         }
+
        
     }
-    public void SetParent(GameObject PlayerParent)
+    public void DetachFromParent()
     {
-        if(MyParent = true)
-        {
-            //Makes the GameObject "newParent" the parent of the GameObject "player".
-            KnottenBoksPrefab.transform.parent = PlayerParent.transform;
-
-
-        }
-        
+        KnottenBoks.transform.parent = null;
     }
+
 
 
 }
