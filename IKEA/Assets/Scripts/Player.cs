@@ -52,12 +52,11 @@ public class Player : MonoBehaviour{
             KnottenBoks.transform.parent = PlayerParent.transform;
 
 
-
         }
         if (collision.gameObject.CompareTag("KnottenBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
         {
             KnottenBoks.transform.parent = PlayerParent.transform;
-
+            Destroy(KnottenBoks.GetComponent<Rigidbody>());
 
         }
 
@@ -67,6 +66,8 @@ public class Player : MonoBehaviour{
     {
         KnottenBoks.transform.parent = null;
         timeOfLastPickUp = Time.time;
+        KnottenBoks.AddComponent<Rigidbody>();
+
     }
 
 

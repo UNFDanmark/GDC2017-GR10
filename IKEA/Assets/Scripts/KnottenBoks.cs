@@ -20,16 +20,7 @@ public class KnottenBoks : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            RigidKnottenBoks.constraints = RigidbodyConstraints.FreezeAll;
+  
 
 
-
-        }
-
-    }
 }

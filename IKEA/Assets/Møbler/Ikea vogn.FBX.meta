@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 3ca18a853ee86694a998570ac5d4caff
+timeCreated: 1500909536
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cylinder002
+    100002: Cylinder003
+    100004: Cylinder004
+    100006: Cylinder005
+    100008: Cylinder006
+    100010: Cylinder007
+    100012: Cylinder008
+    100014: Cylinder010
+    100016: Cylinder011
+    100018: Cylinder012
+    100020: Cylinder013
+    100022: Cylinder014
+    100024: Cylinder015
+    100026: Cylinder016
+    100028: Cylinder017
+    100030: Cylinder018
+    100032: Cylinder019
+    100034: Cylinder020
+    100036: Cylinder021
+    100038: Cylinder022
+    100040: Cylinder023
+    100042: Cylinder024
+    100044: Cylinder025
+    100046: Cylinder026
+    100048: Hjul 1
+    100050: Hjul 2
+    100052: Hjul 3
+    100054: Hjul 4
+    100056: "H\xE5ndtag 1"
+    100058: "H\xE5ndtag 2"
+    100060: //RootNode
+    400000: Cylinder002
+    400002: Cylinder003
+    400004: Cylinder004
+    400006: Cylinder005
+    400008: Cylinder006
+    400010: Cylinder007
+    400012: Cylinder008
+    400014: Cylinder010
+    400016: Cylinder011
+    400018: Cylinder012
+    400020: Cylinder013
+    400022: Cylinder014
+    400024: Cylinder015
+    400026: Cylinder016
+    400028: Cylinder017
+    400030: Cylinder018
+    400032: Cylinder019
+    400034: Cylinder020
+    400036: Cylinder021
+    400038: Cylinder022
+    400040: Cylinder023
+    400042: Cylinder024
+    400044: Cylinder025
+    400046: Cylinder026
+    400048: Hjul 1
+    400050: Hjul 2
+    400052: Hjul 3
+    400054: Hjul 4
+    400056: "H\xE5ndtag 1"
+    400058: "H\xE5ndtag 2"
+    400060: //RootNode
+    2300000: Cylinder002
+    2300002: Cylinder003
+    2300004: Cylinder004
+    2300006: Cylinder005
+    2300008: Cylinder006
+    2300010: Cylinder007
+    2300012: Cylinder008
+    2300014: Cylinder010
+    2300016: Cylinder011
+    2300018: Cylinder012
+    2300020: Cylinder013
+    2300022: Cylinder014
+    2300024: Cylinder015
+    2300026: Cylinder016
+    2300028: Cylinder017
+    2300030: Cylinder018
+    2300032: Cylinder019
+    2300034: Cylinder020
+    2300036: Cylinder021
+    2300038: Cylinder022
+    2300040: Cylinder023
+    2300042: Cylinder024
+    2300044: Cylinder025
+    2300046: Cylinder026
+    2300048: Hjul 1
+    2300050: Hjul 2
+    2300052: Hjul 3
+    2300054: Hjul 4
+    2300056: "H\xE5ndtag 1"
+    2300058: "H\xE5ndtag 2"
+    2300060: //RootNode
+    3300000: Cylinder002
+    3300002: Cylinder003
+    3300004: Cylinder004
+    3300006: Cylinder005
+    3300008: Cylinder006
+    3300010: Cylinder007
+    3300012: Cylinder008
+    3300014: Cylinder010
+    3300016: Cylinder011
+    3300018: Cylinder012
+    3300020: Cylinder013
+    3300022: Cylinder014
+    3300024: Cylinder015
+    3300026: Cylinder016
+    3300028: Cylinder017
+    3300030: Cylinder018
+    3300032: Cylinder019
+    3300034: Cylinder020
+    3300036: Cylinder021
+    3300038: Cylinder022
+    3300040: Cylinder023
+    3300042: Cylinder024
+    3300044: Cylinder025
+    3300046: Cylinder026
+    3300048: Hjul 1
+    3300050: Hjul 2
+    3300052: Hjul 3
+    3300054: Hjul 4
+    3300056: "H\xE5ndtag 1"
+    3300058: "H\xE5ndtag 2"
+    3300060: //RootNode
+    4300000: Flade/gitter
+    4300002: Cylinder026
+    4300004: Cylinder025
+    4300006: Cylinder024
+    4300008: Cylinder023
+    4300010: Cylinder022
+    4300012: Cylinder021
+    4300014: Cylinder020
+    4300016: Cylinder019
+    4300018: Cylinder018
+    4300020: Cylinder017
+    4300022: Cylinder016
+    4300024: Cylinder015
+    4300026: Cylinder014
+    4300028: Cylinder013
+    4300030: Cylinder012
+    4300032: Cylinder011
+    4300034: Cylinder010
+    4300036: Cylinder008
+    4300038: Cylinder007
+    4300040: Cylinder006
+    4300042: Cylinder005
+    4300044: Cylinder004
+    4300046: Cylinder003
+    4300048: Cylinder002
+    4300050: Hjul 1
+    4300052: Hjul 2
+    4300054: Hjul 3
+    4300056: Hjul 4
+    4300058: "H\xE5ndtag 2"
+    4300060: "H\xE5ndtag 1"
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
