@@ -21,7 +21,6 @@ GameObject:
   - 4: {fileID: 4000013336551734}
   - 33: {fileID: 33000013408666706}
   - 23: {fileID: 23000012509036812}
-  - 114: {fileID: 114000011972737542}
   - 65: {fileID: 65000014119276078}
   m_Layer: 8
   m_Name: Medium papkasse 1
@@ -56,7 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cc6dc4987d0e9624383e1b9142144353, type: 2}
+  - {fileID: 2100000, guid: 72eee3587fc24264689d6201eca045cd, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -91,15 +90,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.7243657, y: 8, z: 3}
   m_Center: {x: 0.062182903, y: 0, z: 1.5}
---- !u!114 &114000011972737542
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012563389260}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9db37f4fad6f9f649afd55bf51be428a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RigidKnottenBoks: {fileID: 0}
