@@ -7,6 +7,7 @@ public class Player : MonoBehaviour{
     public GameObject PlayerParent;
     public GameObject KnottenBoksPrefab;
     public GameObject Knotten;
+    public GameObject Knotten1;
     public float turnSpeed = 90;
     public float moveSpeed = 10;
     public Rigidbody myRigid;
@@ -50,8 +51,12 @@ public class Player : MonoBehaviour{
             Destroy(Knotten);
             KnottenBoks = Instantiate(KnottenBoksPrefab);
             KnottenBoks.transform.parent = PlayerParent.transform;
-
-
+        }
+        if (collision.gameObject.CompareTag("Knotten1"))
+        {
+            Destroy(Knotten1);
+            KnottenBoks = Instantiate(KnottenBoksPrefab);
+            KnottenBoks.transform.parent = PlayerParent.transform;
         }
         if (collision.gameObject.CompareTag("KnottenBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
         {
