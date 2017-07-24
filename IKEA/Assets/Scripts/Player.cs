@@ -10,7 +10,6 @@ public class Player : MonoBehaviour{
     public float turnSpeed = 90;
     public float moveSpeed = 10;
     public Rigidbody myRigid;
-    public Rigidbody RigidKnottenBoks;
     public float timeOfLastPickUp = 0;
     public float reloadTime = 0.5f;
 
@@ -18,8 +17,8 @@ public class Player : MonoBehaviour{
     // Use this for initialization
     void Start ()
     {
-        Rigidbody myRigid = GetComponent<Rigidbody>();
-        Rigidbody RigidKnottenBoks = GetComponent<Rigidbody>();
+        myRigid = GetComponent<Rigidbody>();
+   
     }
 	
 	// Update is called once per frame
@@ -51,14 +50,14 @@ public class Player : MonoBehaviour{
             Destroy(Knotten);
             KnottenBoks = Instantiate(KnottenBoksPrefab);
             KnottenBoks.transform.parent = PlayerParent.transform;
-            RigidKnottenBoks.constraints = RigidbodyConstraints.FreezeAll;
+
 
 
         }
         if (collision.gameObject.CompareTag("KnottenBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
         {
             KnottenBoks.transform.parent = PlayerParent.transform;
-            
+
 
         }
 
@@ -67,7 +66,6 @@ public class Player : MonoBehaviour{
     public void DetachFromParent()
     {
         KnottenBoks.transform.parent = null;
-        RigidKnottenBoks.constraints = RigidbodyConstraints.None;
         timeOfLastPickUp = Time.time;
     }
 
