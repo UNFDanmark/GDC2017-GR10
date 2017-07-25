@@ -220,7 +220,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Succes
+  m_Text: "Forkert m\xF8bel"
 --- !u!222 &470055788
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -500,7 +500,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9ac24f35fc15dc8449be299db7660fff, type: 2}
+  - {fileID: 2100000, guid: 51e4f62cd2965e74984d348fbc719055, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}

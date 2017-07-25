@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: b45fb8953b1ac48468568746dbe33bba
-timeCreated: 1500997258
+guid: 571195ca82bd9d74f901f36db6afc614
+timeCreated: 1500906616
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Box002
+    4300000: Medium papkasse
   materials:
     importMaterials: 1
     materialName: 0

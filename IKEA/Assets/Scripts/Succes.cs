@@ -23,6 +23,11 @@ public class Succes : MonoBehaviour {
             Application.LoadLevel("SuccesScreen");
         }
 
+        if (collision.gameObject.CompareTag("BigBoks"))
+        {
+            Application.LoadLevel("Fail");
+        }
+
 
 
     }
