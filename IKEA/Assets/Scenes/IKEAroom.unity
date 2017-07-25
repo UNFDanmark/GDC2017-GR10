@@ -804,7 +804,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
 --- !u!82 &799625962
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1540,47 +1540,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
   m_IsPrefabParent: 0
---- !u!1 &993151273
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 993151275}
-  - 65: {fileID: 993151274}
-  m_Layer: 10
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &993151274
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 993151273}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.91, y: 6, z: 11}
-  m_Center: {x: -0.32, y: 0, z: -2.75}
---- !u!4 &993151275
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 993151273}
-  m_LocalRotation: {x: -0.4999171, y: 0.5000829, z: 0.4999171, w: 0.5000829}
-  m_LocalPosition: {x: 17.36, y: 8.43309, z: 46.4}
-  m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
 --- !u!1 &994418380 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
@@ -2198,7 +2157,22 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.283495, y: 6.263427, z: 11.129879}
-  m_Center: {x: 0.0000015497208, y: -0.000002503395, z: -2.8681517}
+  m_Center: {x: 0.0000015497208, y: -0.000002503395, z: -2.6}
+--- !u!54 &1353222167
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353222162}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1447509193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,7 +2762,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!82 &1774659857
 AudioSource:
   m_ObjectHideFlags: 0
