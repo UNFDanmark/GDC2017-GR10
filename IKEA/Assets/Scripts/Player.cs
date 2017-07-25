@@ -24,6 +24,9 @@ public class Player : MonoBehaviour{
     public Rigidbody myRigid;
     public float timeOfLastPickUp = 0;
     public float reloadTime = 0.5f;
+    public float Timer = 10;
+
+
  
 
     public bool HoldingBoks = false;
@@ -44,6 +47,11 @@ public class Player : MonoBehaviour{
         if (Input.GetKeyDown("space"))
         {
             DetachFromParent();
+        }
+        print(Timer -= Time.deltaTime);
+        if(Timer <= 0) 
+        {
+            Application.LoadLevel("Fail1");
         }
     }
 
@@ -170,12 +178,14 @@ public class Player : MonoBehaviour{
                 BigBoks.transform.parent = PlayerParent.transform;
                 HoldingBoks = true;
             }
-
-
         }
         
+    }
 
-
+    void OnGUI() 
+    {
+        GUI.contentColor = Color.black;
+        GUI.Label(new Rect(150, 130, 200, 100), "Tid Tilbage: " + (int)Timer);
     }
     public void DetachFromParent()
     {
