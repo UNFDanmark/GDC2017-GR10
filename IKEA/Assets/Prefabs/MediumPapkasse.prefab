@@ -22,7 +22,7 @@ GameObject:
   - 33: {fileID: 33000010948132794}
   - 23: {fileID: 23000013689860508}
   - 65: {fileID: 65000011193999804}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MediumPapkasse
   m_TagString: MedBoks
   m_Icon: {fileID: 0}

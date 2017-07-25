@@ -22,7 +22,7 @@ GameObject:
   - 33: {fileID: 33000011941071874}
   - 23: {fileID: 23000013615687228}
   - 65: {fileID: 65000012747964662}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Big papkasse
   m_TagString: BigBoks
   m_Icon: {fileID: 0}

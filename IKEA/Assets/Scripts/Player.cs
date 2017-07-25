@@ -4,6 +4,7 @@ using System.Collections;
 public class Player : MonoBehaviour{
 
     public float offset;
+    public float bigOffset;
     public GameObject KnottenBoks;
     public GameObject BigBoks;
     public GameObject MediumBoks;
@@ -83,39 +84,15 @@ public class Player : MonoBehaviour{
             }
             if (collision.gameObject.CompareTag("KnottenBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
             {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * offset);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(-90, Rotation.y, 90);
+                KnottenBoks = Instantiate(KnottenBoksPrefab, BoksFromPosition, newRotation) as GameObject;
                 KnottenBoks.transform.parent = PlayerParent.transform;
                 Destroy(KnottenBoks.GetComponent<Rigidbody>());
                 HoldingBoks = true;
             }
-
-
-            if (collision.gameObject.CompareTag("Billy"))
-            {
-                Destroy(Billy);
-                Vector3 BoksFromPosition = transform.position + (transform.forward * offset);
-                Vector3 Rotation = transform.rotation.eulerAngles;
-                Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
-                BigBoks = Instantiate(BigBoksPrefab, BoksFromPosition, newRotation) as GameObject;
-                BigBoks.transform.parent = PlayerParent.transform;
-                HoldingBoks = true;
-            }
-            if (collision.gameObject.CompareTag("Billy1"))
-            {
-                Destroy(Billy1);
-                Vector3 BoksFromPosition = transform.position + (transform.forward * offset);
-                Vector3 Rotation = transform.rotation.eulerAngles;
-                Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
-                BigBoks = Instantiate(BigBoksPrefab, BoksFromPosition, newRotation) as GameObject;
-                BigBoks.transform.parent = PlayerParent.transform;
-                HoldingBoks = true;
-            }
-            if (collision.gameObject.CompareTag("BigBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
-            {
-                BigBoks.transform.parent = PlayerParent.transform;
-                Destroy(BigBoks.GetComponent<Rigidbody>());
-                HoldingBoks = true;
-            }
-
 
 
             if (collision.gameObject.CompareTag("Martin"))
@@ -140,15 +117,32 @@ public class Player : MonoBehaviour{
             }
             if (collision.gameObject.CompareTag("MedBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
             {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * offset);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(-90, Rotation.y, 90);
+                KnottenBoks = Instantiate(KnottenBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                KnottenBoks.transform.parent = PlayerParent.transform;
                 MediumBoks.transform.parent = PlayerParent.transform;
                 Destroy(MediumBoks.GetComponent<Rigidbody>());
                 HoldingBoks = true;
             }
 
-            if (collision.gameObject.CompareTag("Lerhamn"))
+
+            if (collision.gameObject.CompareTag("Billy"))
             {
-                Destroy(Lerhamn);
-                Vector3 BoksFromPosition = transform.position + (transform.forward * offset);
+                Destroy(Billy);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * bigOffset);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
+                BigBoks = Instantiate(BigBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                BigBoks.transform.parent = PlayerParent.transform;
+                HoldingBoks = true;
+            }
+            if (collision.gameObject.CompareTag("Billy1"))
+            {
+                Destroy(Billy1);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * bigOffset);
                 Vector3 Rotation = transform.rotation.eulerAngles;
                 Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
                 BigBoks = Instantiate(BigBoksPrefab, BoksFromPosition, newRotation) as GameObject;
@@ -157,10 +151,26 @@ public class Player : MonoBehaviour{
             }
             if (collision.gameObject.CompareTag("BigBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
             {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * bigOffset);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
+                BigBoks = Instantiate(BigBoksPrefab, BoksFromPosition, newRotation) as GameObject;
                 BigBoks.transform.parent = PlayerParent.transform;
                 Destroy(BigBoks.GetComponent<Rigidbody>());
                 HoldingBoks = true;
             }
+            if (collision.gameObject.CompareTag("Lerhamn"))
+            {
+                Destroy(Lerhamn);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * bigOffset);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
+                BigBoks = Instantiate(BigBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                BigBoks.transform.parent = PlayerParent.transform;
+                HoldingBoks = true;
+            }
+
 
         }
         

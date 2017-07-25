@@ -22,7 +22,7 @@ GameObject:
   - 33: {fileID: 33000012220756254}
   - 23: {fileID: 23000012497206352}
   - 65: {fileID: 65000013039239736}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Small papkasse
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -149,7 +149,7 @@ GameObject:
   - 33: {fileID: 134898412}
   - 64: {fileID: 134898411}
   - 23: {fileID: 134898410}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - 33: {fileID: 243931902}
   - 65: {fileID: 243931901}
   - 23: {fileID: 243931900}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,8 +306,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 18, z: 1}
+  m_Center: {x: 0, y: 9, z: 0}
 --- !u!33 &243931902
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -339,7 +339,7 @@ GameObject:
   - 33: {fileID: 296852536}
   - 64: {fileID: 296852535}
   - 23: {fileID: 296852534}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,7 +418,7 @@ GameObject:
   - 33: {fileID: 322691771}
   - 64: {fileID: 322691770}
   - 23: {fileID: 322691769}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ GameObject:
   - 33: {fileID: 339439951}
   - 64: {fileID: 339439950}
   - 23: {fileID: 339439949}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -640,6 +640,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 17028681fa6631d448c7edba574f387b, type: 2}
+    - target: {fileID: 100000, guid: a635ccfb490fdb44086d2645e52acfe3, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a635ccfb490fdb44086d2645e52acfe3, type: 3}
   m_IsPrefabParent: 0
@@ -671,7 +675,7 @@ GameObject:
   - 136: {fileID: 662539777}
   - 23: {fileID: 662539776}
   - 54: {fileID: 662539775}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -754,7 +758,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!1 &717084670 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
@@ -856,7 +860,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -950,6 +954,46 @@ Prefab:
       propertyPath: m_TagString
       value: Billy
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
   m_IsPrefabParent: 0
@@ -1012,6 +1056,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2587be3402127a74391fb31857ec66bd, type: 2}
+    - target: {fileID: 100000, guid: ac21ab5ea01353744997f5d2428406a2, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac21ab5ea01353744997f5d2428406a2, type: 3}
   m_IsPrefabParent: 0
@@ -1063,6 +1111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 2.5
+  bigOffset: 1
   KnottenBoks: {fileID: 100000, guid: b45fb8953b1ac48468568746dbe33bba, type: 3}
   BigBoks: {fileID: 100000, guid: 571195ca82bd9d74f901f36db6afc614, type: 3}
   MediumBoks: {fileID: 100000, guid: b45fb8953b1ac48468568746dbe33bba, type: 3}
@@ -1084,7 +1133,7 @@ MonoBehaviour:
   moveSpeed: 17
   myRigid: {fileID: 946248150}
   timeOfLastPickUp: 0
-  reloadTime: 3
+  reloadTime: 2
   HoldingBoks: 0
 --- !u!54 &946248150
 Rigidbody:
@@ -1099,7 +1148,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!23 &946248151
 MeshRenderer:
@@ -1156,10 +1205,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 946248148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 8, z: 0}
+  m_LocalPosition: {x: 0, y: 8, z: -7.5}
   m_LocalScale: {x: 2, y: 16, z: 2}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 1447509198}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1 &950594797
@@ -1170,7 +1220,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 950594798}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Roads
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1199,7 +1249,7 @@ Transform:
   - {fileID: 134898409}
   - {fileID: 1265445565}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!1001 &971643962
 Prefab:
   m_ObjectHideFlags: 0
@@ -1331,6 +1381,46 @@ Prefab:
       propertyPath: m_TagString
       value: Billy1
       objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
   m_IsPrefabParent: 0
@@ -1343,7 +1433,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 993151275}
   - 65: {fileID: 993151274}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1374,7 +1464,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!1 &994418380 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
@@ -1534,6 +1624,26 @@ Prefab:
       propertyPath: m_TagString
       value: Martin1
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
   m_IsPrefabParent: 0
@@ -1575,7 +1685,7 @@ GameObject:
   - 33: {fileID: 1265445568}
   - 64: {fileID: 1265445567}
   - 23: {fileID: 1265445566}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1654,7 +1764,7 @@ GameObject:
   - 33: {fileID: 1266769419}
   - 65: {fileID: 1266769418}
   - 23: {fileID: 1266769417}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1700,8 +1810,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 18, z: 1}
+  m_Center: {x: 0, y: 9, z: 0}
 --- !u!33 &1266769419
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1733,7 +1843,7 @@ GameObject:
   - 33: {fileID: 1269131462}
   - 64: {fileID: 1269131461}
   - 23: {fileID: 1269131460}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1909,7 +2019,7 @@ GameObject:
   - 124: {fileID: 1447509196}
   - 92: {fileID: 1447509195}
   - 81: {fileID: 1447509194}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Camera
   m_TagString: Knotten
   m_Icon: {fileID: 0}
@@ -1977,13 +2087,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1447509193}
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 49.45, z: -33.34}
-  m_LocalScale: {x: 1, y: 1.09375, z: 1.09375}
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+  m_LocalRotation: {x: 0.46174863, y: -0, z: -0, w: 0.8870109}
+  m_LocalPosition: {x: 0, y: 2.242, z: -7.71}
+  m_LocalScale: {x: 0.5, y: 0.3894483, z: 0.22578627}
+  m_LocalEulerAnglesHint: {x: 55, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 946248154}
+  m_RootOrder: 0
 --- !u!1 &1487094444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,7 +2105,7 @@ GameObject:
   - 33: {fileID: 1487094448}
   - 64: {fileID: 1487094447}
   - 23: {fileID: 1487094446}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2150,6 +2260,26 @@ Prefab:
       propertyPath: m_TagString
       value: Lerhamn
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 843b6959d49f2284eb01691bbff51641, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 843b6959d49f2284eb01691bbff51641, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 843b6959d49f2284eb01691bbff51641, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 843b6959d49f2284eb01691bbff51641, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 843b6959d49f2284eb01691bbff51641, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 843b6959d49f2284eb01691bbff51641, type: 3}
   m_IsPrefabParent: 0
@@ -2180,7 +2310,7 @@ GameObject:
   - 33: {fileID: 1672127986}
   - 64: {fileID: 1672127985}
   - 23: {fileID: 1672127984}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2247,7 +2377,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!1 &1674266315 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
@@ -2275,7 +2405,7 @@ GameObject:
   - 33: {fileID: 1746689893}
   - 64: {fileID: 1746689892}
   - 23: {fileID: 1746689891}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2370,7 +2500,7 @@ GameObject:
   - 33: {fileID: 1768127423}
   - 65: {fileID: 1768127422}
   - 23: {fileID: 1768127421}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2416,8 +2546,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 18, z: 1}
+  m_Center: {x: 0, y: 9, z: 0}
 --- !u!33 &1768127423
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2481,7 +2611,7 @@ GameObject:
   - 33: {fileID: 1816327126}
   - 64: {fileID: 1816327125}
   - 23: {fileID: 1816327124}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2557,7 +2687,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1887522457}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: "V\xE6ge"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2580,7 +2710,7 @@ Transform:
   - {fileID: 1266769420}
   - {fileID: 2078305128}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!1 &1890027272 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: 7621ff4d70ad9e041a4b4535454fc263, type: 3}
@@ -2686,7 +2816,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2048184883}
   - 108: {fileID: 2048184882}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Directional light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2827,6 +2957,26 @@ Prefab:
       propertyPath: m_TagString
       value: Martin
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 178518f27c40beb4cb18b6a11d644804, type: 3}
   m_IsPrefabParent: 0
@@ -2905,6 +3055,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2587be3402127a74391fb31857ec66bd, type: 2}
+    - target: {fileID: 100000, guid: ac21ab5ea01353744997f5d2428406a2, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac21ab5ea01353744997f5d2428406a2, type: 3}
   m_IsPrefabParent: 0
@@ -2919,7 +3073,7 @@ GameObject:
   - 33: {fileID: 2078305127}
   - 65: {fileID: 2078305126}
   - 23: {fileID: 2078305125}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2965,8 +3119,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 18, z: 1}
+  m_Center: {x: 0, y: 9, z: 0}
 --- !u!33 &2078305127
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2998,7 +3152,7 @@ GameObject:
   - 33: {fileID: 2095637820}
   - 64: {fileID: 2095637819}
   - 23: {fileID: 2095637818}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
