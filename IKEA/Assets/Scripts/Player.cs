@@ -13,12 +13,14 @@ public class Player : MonoBehaviour{
     public Rigidbody myRigid;
     public float timeOfLastPickUp = 0;
     public float reloadTime = 0.5f;
+    public float boksPosition = 1f;
 
 
     // Use this for initialization
     void Start ()
     {
         myRigid = GetComponent<Rigidbody>();
+
    
     }
 	
@@ -49,13 +51,19 @@ public class Player : MonoBehaviour{
         if (collision.gameObject.CompareTag("Knotten"))
         {
             Destroy(Knotten);
-            KnottenBoks = Instantiate(KnottenBoksPrefab);
+            Vector3 Position = new Vector3(transform.position.x, transform.position.y, transform.position.z + boksPosition);
+            Vector3 Rotation = transform.rotation.eulerAngles;
+            Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
+            KnottenBoks = Instantiate(KnottenBoksPrefab ,Position, newRotation) as GameObject;
             KnottenBoks.transform.parent = PlayerParent.transform;
         }
         if (collision.gameObject.CompareTag("Knotten1"))
         {
             Destroy(Knotten1);
-            KnottenBoks = Instantiate(KnottenBoksPrefab);
+            Vector3 Position = new Vector3(transform.position.x, transform.position.y, transform.position.z + boksPosition);
+            Vector3 Rotation = transform.rotation.eulerAngles;
+            Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
+            KnottenBoks = Instantiate(KnottenBoksPrefab, Position, newRotation) as GameObject;
             KnottenBoks.transform.parent = PlayerParent.transform;
         }
         if (collision.gameObject.CompareTag("KnottenBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
