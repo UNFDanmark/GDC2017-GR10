@@ -27,6 +27,10 @@ public class Succes : MonoBehaviour {
         {
             Application.LoadLevel("Fail");
         }
+        if (collision.gameObject.CompareTag("MedBoks"))
+        {
+            Application.LoadLevel("Fail");
+        }
 
 
 

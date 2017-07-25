@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/Scenes/IKEAroom.unity
   - enabled: 1
     path: Assets/Scenes/SuccesScreen.unity
+  - enabled: 1
+    path: Assets/Scenes/Fail.unity
