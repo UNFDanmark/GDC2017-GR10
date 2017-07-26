@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DontDe : MonoBehaviour {
+public class MakePlayerWork : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () 
-    {
-        DontDestroyOnLoad(transform.gameObject);
-    }
+	void Start () {
+	
+	}
 	
 	// Update is called once per frame
 	void Update () {

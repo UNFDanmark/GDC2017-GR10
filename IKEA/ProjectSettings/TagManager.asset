@@ -5,16 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Knotten
-  - KnottenBoks
-  - Knotten1
+  - Micke
   - Billy
-  - Billy1
-  - BigBoks
+  - BillyBoks
   - Martin
-  - Martin1
-  - MedBoks
+  - MartinBoks
   - Lerhamn
-  - 2BigBoks
+  - LerhamnBoks
+  - KnottenBoks
   layers:
   - Default
   - TransparentFX
