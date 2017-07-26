@@ -62,6 +62,7 @@ public class Player : MonoBehaviour{
 
     void OnCollisionEnter(Collision collision)
     {
+
         if (HoldingBoks == false) 
         {
             print("O");
@@ -102,20 +103,7 @@ public class Player : MonoBehaviour{
                 HoldingBoks = true;
                 MartinUp = true;
             }
-            
-            if (collision.gameObject.CompareTag("MartinBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
-            {
-                Destroy(collision.gameObject);
-                Vector3 BoksFromPosition = transform.position + (transform.forward * offset);
-                Vector3 Rotation = transform.rotation.eulerAngles;
-                Quaternion newRotation = Quaternion.Euler(-90, Rotation.y, 90);
-                MediumBoks = Instantiate(MartinBoksPrefab, BoksFromPosition, newRotation) as GameObject;
-                MediumBoks.transform.parent = PlayerParent.transform;
-                MediumBoks.transform.parent = PlayerParent.transform;
-                Destroy(MediumBoks.GetComponent<Rigidbody>());
-                MartinUp = true;
-                HoldingBoks = true;
-            }
+           
 
 
             if (collision.gameObject.CompareTag("Billy"))
