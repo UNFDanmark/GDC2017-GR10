@@ -28,7 +28,7 @@ public class Succes : MonoBehaviour
             Application.LoadLevel("SuccesScreen");
         }
 
-        if (collision.gameObject.CompareTag("BigBoks"))
+        if (collision.gameObject.CompareTag("MartinBoks"))
         {
             myAudio.PlayOneShot(Drop);
             Application.LoadLevel("Fail");
@@ -38,7 +38,7 @@ public class Succes : MonoBehaviour
             myAudio.PlayOneShot(Drop);
             Application.LoadLevel("Fail");
         }
-        if (collision.gameObject.CompareTag("MedBoks"))
+        if (collision.gameObject.CompareTag("BillyBoks"))
         {
             myAudio.PlayOneShot(Drop);
             Application.LoadLevel("Fail");

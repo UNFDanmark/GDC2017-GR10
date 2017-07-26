@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Player : MonoBehaviour{
 
     public float offset;
@@ -24,6 +25,9 @@ public class Player : MonoBehaviour{
     public bool BillyUp = false;
     public bool LerhamnUp = false;
     private GUIStyle guiSize = new GUIStyle();
+    public Animator myAnimator;
+    public float crossfadeTime = 0.2f;
+    public float kickForce = 5;
 
 
     // Use this for initialization
@@ -38,15 +42,22 @@ public class Player : MonoBehaviour{
 	void Update ()
     {
         transform.Rotate(0, turnSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0);
+
         if (Input.GetKeyDown("space"))
         {
-            DetachFromParent();
+            DetachBox();
         }
-        print(Timer -= Time.deltaTime);
+        
         if(Timer <= 0) 
         {
             Application.LoadLevel("Fail1");
         }
+
+        if(Input.GetKeyDown("z")) 
+        {
+            Kick();
+        }
+
     }
 
     void FixedUpdate()
@@ -186,7 +197,7 @@ public class Player : MonoBehaviour{
         }
 
     }
-    public void DetachFromParent()
+    public void DetachBox()
     {
         BigBoks.transform.parent = null;
         MediumBoks.transform.parent = null;
@@ -199,9 +210,18 @@ public class Player : MonoBehaviour{
         BillyUp = false;
         LerhamnUp = false;
 
-}
+    }
+    public void Kick()
+    {
+        var kickableMask = 1 << LayerMask.NameToLayer("Kickable");
+        Collider[] ObjectsToKick = Physics.OverlapBox(transform.position + new Vector3(0, 2.44f, 1.77f), new Vector3(2, 2, 2), transform.rotation, kickableMask);
 
-   
+        foreach(Collider ObjectToKick in ObjectsToKick) {
+            ObjectToKick.GetComponent<Rigidbody>().AddForce(transform.forward + transform.up * kickForce, ForceMode.Impulse);
+        }
+    }
+
+
 
 
 

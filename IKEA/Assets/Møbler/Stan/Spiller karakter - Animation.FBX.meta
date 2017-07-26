@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: e955cc03aa94a4b49a7e4afbdff7b81f
-timeCreated: 1501092503
+guid: f727e85db7810b54d8dc2040069d01dc
+timeCreated: 1501097102
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -54,8 +54,9 @@ ModelImporter:
     400044: Spine1
     400046: Spine2
     4300000: Body
-    7400000: Take 001
-    7400002: Take 0010
+    7400000: idell
+    7400002: RunHands
+    7400004: Kick
     9500000: //RootNode
     13700000: Body
   materials:
@@ -65,14 +66,14 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleCurves: 1
+    resampleCurves: 0
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 0
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -80,10 +81,86 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: idell
       takeName: Take 001
-      firstFrame: 9
-      lastFrame: 29
+      firstFrame: 31
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Master
+        weight: 1
+      - path: Master/LLeg1
+        weight: 1
+      - path: Master/LLeg1/LLeg 2
+        weight: 1
+      - path: Master/LLeg1/LLeg 2/LFoot
+        weight: 1
+      - path: Master/LLeg1/LLeg 2/LFoot/Nub 1
+        weight: 1
+      - path: Master/Nub
+        weight: 1
+      - path: Master/RLeg1
+        weight: 1
+      - path: Master/RLeg1/RLeg2
+        weight: 1
+      - path: Master/RLeg1/RLeg2/RFoot
+        weight: 1
+      - path: Master/RLeg1/RLeg2/RFoot/Nub 2
+        weight: 1
+      - path: Master/Spine1
+        weight: 1
+      - path: Master/Spine1/Spine2
+        weight: 1
+      - path: Master/Spine1/Spine2/LArm1
+        weight: 1
+      - path: Master/Spine1/Spine2/LArm1/LArm2
+        weight: 1
+      - path: Master/Spine1/Spine2/LArm1/LArm2/LHand
+        weight: 1
+      - path: Master/Spine1/Spine2/LArm1/LArm2/LHand/Nub 4
+        weight: 1
+      - path: Master/Spine1/Spine2/Neck
+        weight: 1
+      - path: Master/Spine1/Spine2/Neck/Nub 3
+        weight: 1
+      - path: Master/Spine1/Spine2/RArm1
+        weight: 1
+      - path: Master/Spine1/Spine2/RArm1/RArm2
+        weight: 1
+      - path: Master/Spine1/Spine2/RArm1/RArm2/RHand
+        weight: 1
+      - path: Master/Spine1/Spine2/RArm1/RArm2/RHand/Nub 5
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RunHands
+      takeName: Take 001
+      firstFrame: 51
+      lastFrame: 72
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -156,10 +233,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Take 0010
+      name: Kick
       takeName: Take 001
-      firstFrame: 31
-      lastFrame: 51
+      firstFrame: 53
+      lastFrame: 97
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

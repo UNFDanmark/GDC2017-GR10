@@ -13,6 +13,9 @@ TagManager:
   - Lerhamn
   - LerhamnBoks
   - KnottenBoks
+  - Knotten1
+  - Billy1
+  - Martin1
   layers:
   - Default
   - TransparentFX
@@ -27,7 +30,7 @@ TagManager:
   - TroughWall
   - Wall
   - Floor
-  - 
+  - Kickable
   - 
   - 
   - 
