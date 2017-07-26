@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Fail.unity
   - enabled: 1
     path: Assets/Scenes/Fail1.unity
+  - enabled: 1
+    path: Assets/Scenes/IKEAroom2.unity

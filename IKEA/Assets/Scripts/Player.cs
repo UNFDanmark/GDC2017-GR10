@@ -30,6 +30,8 @@ public class Player : MonoBehaviour{
     public bool MartinUp = false;
     public bool BillyUp = false;
     public bool LerhamnUp = false;
+    private GUIStyle guiSize = new GUIStyle();
+
 
     // Use this for initialization
     void Start ()
@@ -208,10 +210,28 @@ public class Player : MonoBehaviour{
     void OnGUI() 
     {
         GUI.contentColor = Color.black;
-        GUI.Label(new Rect(75, 130, 200, 100), "Tid Tilbage: " + (int)Timer);
+        guiSize.fontSize = 20;
+        GUI.Label(new Rect(75, 70, 200, 100), "Time left: " + (int)Timer, guiSize);
+        GUI.Label(new Rect(75, 135, 200, 100), "Wanted object:", guiSize);
         if(KnottenUp == true) 
         {
-            GUI.Label(new Rect(500, 500, 500, 100), "Boks content: Knotten");
+            GUI.Label(new Rect(75, 110, 200 , 100),  "Boks content: Knotten", guiSize);
+        }
+        if (MartinUp == true)
+        {
+            GUI.Label(new Rect(75, 110, 200, 100), "Boks content: Martin", guiSize);
+        }
+        if (BillyUp == true)
+        {
+            GUI.Label(new Rect(75, 110, 200, 100), "Boks content: Billy", guiSize);
+        }
+        if (LerhamnUp == true)
+        {
+            GUI.Label(new Rect(75, 110, 200, 100), "Boks content: Lerhamn", guiSize);
+        }
+        if (KnottenUp == false && MartinUp == false && BillyUp == false && LerhamnUp == false)
+        {
+            GUI.Label(new Rect(75, 110, 200, 100), "Boks content: Pick up a object", guiSize);
         }
 
     }
