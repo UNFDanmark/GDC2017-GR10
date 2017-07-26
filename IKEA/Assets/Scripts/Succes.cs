@@ -33,6 +33,11 @@ public class Succes : MonoBehaviour
             myAudio.PlayOneShot(Drop);
             Application.LoadLevel("Fail");
         }
+        if (collision.gameObject.CompareTag("2BigBoks"))
+        {
+            myAudio.PlayOneShot(Drop);
+            Application.LoadLevel("Fail");
+        }
         if (collision.gameObject.CompareTag("MedBoks"))
         {
             myAudio.PlayOneShot(Drop);
