@@ -215,23 +215,23 @@ public class Player : MonoBehaviour{
         GUI.Label(new Rect(75, 135, 200, 100), "Wanted object:", guiSize);
         if(KnottenUp == true) 
         {
-            GUI.Label(new Rect(75, 110, 200 , 100),  "Boks content: Knotten", guiSize);
+            GUI.Label(new Rect(75, 110, 200 , 100),  "Boxs content: Knotten", guiSize);
         }
         if (MartinUp == true)
         {
-            GUI.Label(new Rect(75, 110, 200, 100), "Boks content: Martin", guiSize);
+            GUI.Label(new Rect(75, 110, 200, 100), "Boxs content: Martin", guiSize);
         }
         if (BillyUp == true)
         {
-            GUI.Label(new Rect(75, 110, 200, 100), "Boks content: Billy", guiSize);
+            GUI.Label(new Rect(75, 110, 200, 100), "Boxs content: Billy", guiSize);
         }
         if (LerhamnUp == true)
         {
-            GUI.Label(new Rect(75, 110, 200, 100), "Boks content: Lerhamn", guiSize);
+            GUI.Label(new Rect(75, 110, 200, 100), "Boxs content: Lerhamn", guiSize);
         }
         if (KnottenUp == false && MartinUp == false && BillyUp == false && LerhamnUp == false)
         {
-            GUI.Label(new Rect(75, 110, 200, 100), "Boks content: Pick up a object", guiSize);
+            GUI.Label(new Rect(75, 110, 200, 100), "Boxs content: Pick up a object", guiSize);
         }
 
     }
