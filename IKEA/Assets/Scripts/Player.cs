@@ -8,8 +8,11 @@ public class Player : MonoBehaviour{
     public float offsetUp;
     public float bigOffsetForward;
     public float bigOffsetUp;
+    public float smallOffsetForward;
+    public float smallOffsetUp;
     public GameObject BigBoks;
     public GameObject MediumBoks;
+    public GameObject SmallBoks;
     public GameObject PlayerParent;
     public GameObject KnottenBoksPrefab;
     public GameObject LerhamnBoksPrefab;
@@ -17,6 +20,11 @@ public class Player : MonoBehaviour{
     public GameObject MartinBoksPrefab;
     public GameObject HemnesBoksPrefab;
     public GameObject KivikBoksPrefab;
+    public GameObject MockelbyBoksPrefab;
+    public GameObject AvsiktligBoksPrefab;
+    public GameObject MickeBoksPrefab;
+    public GameObject NorrarydBoksPrefab;
+    public GameObject HemnesSengBoksPrefab;
     public float turnSpeed = 90;
     public float moveSpeed = 10;
     public Rigidbody myRigid;
@@ -30,6 +38,11 @@ public class Player : MonoBehaviour{
     public bool LerhamnUp = false;
     public bool HemnesUp = false;
     public bool KivikUp = false;
+    public bool MockelbyUp = false;
+    public bool AvsiktligUp = false;
+    public bool MickeUp = false;
+    public bool NorrarydUp = false;
+    public bool HemnesSengUp = false;
     private GUIStyle guiSize = new GUIStyle();
     public Animator myAnimator;
     public float crossfadeTime = 0.2f;
@@ -96,7 +109,6 @@ public class Player : MonoBehaviour{
                 KnottenUp = true;
                 HoldingBoks = true;
             }
-            
             if (collision.gameObject.CompareTag("KnottenBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
             {
                 Destroy(collision.gameObject);
@@ -139,7 +151,6 @@ public class Player : MonoBehaviour{
             }
 
 
-
             if (collision.gameObject.CompareTag("Billy"))
             {
                 Destroy(collision.gameObject);
@@ -151,7 +162,6 @@ public class Player : MonoBehaviour{
                 myAnimator.SetBool("HoldingBoks", true);
                 BillyUp = true;
                 HoldingBoks = true;
-
             }
             if (collision.gameObject.CompareTag("BillyBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
             {
@@ -166,6 +176,7 @@ public class Player : MonoBehaviour{
                 BillyUp = true;
                 HoldingBoks = true;
             }
+
 
             if (collision.gameObject.CompareTag("Lerhamn"))
             {
@@ -192,6 +203,8 @@ public class Player : MonoBehaviour{
                 LerhamnUp = true;
                 HoldingBoks = true;
             }
+
+
             if (collision.gameObject.CompareTag("Hemnes"))
             {
                 Destroy(collision.gameObject);
@@ -204,7 +217,6 @@ public class Player : MonoBehaviour{
                 HemnesUp = true;
                 HoldingBoks = true;
             }
-
             if (collision.gameObject.CompareTag("HemnesBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
             {
                 Destroy(collision.gameObject);
@@ -215,9 +227,10 @@ public class Player : MonoBehaviour{
                 MediumBoks.transform.parent = PlayerParent.transform;
                 Destroy(MediumBoks.GetComponent<Rigidbody>());
                 myAnimator.SetBool("HoldingBoks", true);
-                KivikUp = true;
+                HemnesUp = true;
                 HoldingBoks = true;
             }
+
 
             if (collision.gameObject.CompareTag("Kivik"))
             {
@@ -225,24 +238,157 @@ public class Player : MonoBehaviour{
                 Vector3 BoksFromPosition = transform.position + (transform.forward * bigOffsetForward + transform.up * bigOffsetUp);
                 Vector3 Rotation = transform.rotation.eulerAngles;
                 Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
-                MediumBoks = Instantiate(KivikBoksPrefab, BoksFromPosition, newRotation) as GameObject;
-                MediumBoks.transform.parent = PlayerParent.transform;
+                BigBoks = Instantiate(KivikBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                BigBoks.transform.parent = PlayerParent.transform;
                 myAnimator.SetBool("HoldingBoks", true);
-                HemnesUp = true;
+                KivikUp = true;
                 HoldingBoks = true;
             }
-
             if (collision.gameObject.CompareTag("KivikBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
             {
                 Destroy(collision.gameObject);
                 Vector3 BoksFromPosition = transform.position + (transform.forward * bigOffsetForward + transform.up * bigOffsetUp);
                 Vector3 Rotation = transform.rotation.eulerAngles;
                 Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
-                MediumBoks = Instantiate(KivikBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                BigBoks = Instantiate(KivikBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                BigBoks.transform.parent = PlayerParent.transform;
+                Destroy(BigBoks.GetComponent<Rigidbody>());
+                myAnimator.SetBool("HoldingBoks", true);
+                KivikUp = true;
+                HoldingBoks = true;
+            }
+
+
+            if (collision.gameObject.CompareTag("Mockelby"))
+            {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * bigOffsetForward + transform.up * bigOffsetUp);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
+                BigBoks = Instantiate(MockelbyBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                BigBoks.transform.parent = PlayerParent.transform;
+                myAnimator.SetBool("HoldingBoks", true);
+                MockelbyUp = true;
+                HoldingBoks = true;
+            }
+            if (collision.gameObject.CompareTag("MockelbyBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
+            {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * bigOffsetForward + transform.up * bigOffsetUp);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
+                BigBoks = Instantiate(MockelbyBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                BigBoks.transform.parent = PlayerParent.transform;
+                Destroy(BigBoks.GetComponent<Rigidbody>());
+                myAnimator.SetBool("HoldingBoks", true);
+                MockelbyUp = true;
+                HoldingBoks = true;
+            }
+
+
+            if (collision.gameObject.CompareTag("Avsiktlig"))
+            {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * smallOffsetForward + transform.up * smallOffsetUp);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(90, Rotation.y, 90);
+                SmallBoks = Instantiate(AvsiktligBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                SmallBoks.transform.parent = PlayerParent.transform;
+                myAnimator.SetBool("HoldingBoks", true);
+                AvsiktligUp = true;
+                HoldingBoks = true;
+            }
+            if (collision.gameObject.CompareTag("AvsiktligBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
+            {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * smallOffsetForward + transform.up * smallOffsetUp);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(90, Rotation.y, 90);
+                SmallBoks = Instantiate(AvsiktligBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                SmallBoks.transform.parent = PlayerParent.transform;
+                Destroy(SmallBoks.GetComponent<Rigidbody>());
+                myAnimator.SetBool("HoldingBoks", true);
+                AvsiktligUp = true;
+                HoldingBoks = true;
+            }
+
+            if (collision.gameObject.CompareTag("Micke"))
+            {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * bigOffsetForward + transform.up * bigOffsetUp);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
+                BigBoks = Instantiate(MickeBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                BigBoks.transform.parent = PlayerParent.transform;
+                myAnimator.SetBool("HoldingBoks", true);
+                MickeUp = true;
+                HoldingBoks = true;
+            }
+            if (collision.gameObject.CompareTag("MickeBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
+            {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * bigOffsetForward + transform.up * bigOffsetUp);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
+                BigBoks = Instantiate(MickeBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                BigBoks.transform.parent = PlayerParent.transform;
+                Destroy(BigBoks.GetComponent<Rigidbody>());
+                myAnimator.SetBool("HoldingBoks", true);
+                MickeUp = true;
+                HoldingBoks = true;
+            }
+
+
+            if (collision.gameObject.CompareTag("Norraryd"))
+            {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * offsetForward + transform.up * offsetUp);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(-90, Rotation.y, 90);
+                MediumBoks = Instantiate(NorrarydBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                MediumBoks.transform.parent = PlayerParent.transform;
+                myAnimator.SetBool("HoldingBoks", true);
+                NorrarydUp = true;
+                HoldingBoks = true;
+            }
+            if (collision.gameObject.CompareTag("NorrarydBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
+            {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * offsetForward + transform.up * offsetUp);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(-90, Rotation.y, 90);
+                MediumBoks = Instantiate(NorrarydBoksPrefab, BoksFromPosition, newRotation) as GameObject;
                 MediumBoks.transform.parent = PlayerParent.transform;
                 Destroy(MediumBoks.GetComponent<Rigidbody>());
                 myAnimator.SetBool("HoldingBoks", true);
-                KivikUp = true;
+                NorrarydUp = true;
+                HoldingBoks = true;
+            }
+
+
+            if (collision.gameObject.CompareTag("HemnesSeng"))
+            {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * bigOffsetForward + transform.up * bigOffsetUp);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
+                BigBoks = Instantiate(HemnesSengBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                BigBoks.transform.parent = PlayerParent.transform;
+                myAnimator.SetBool("HoldingBoks", true);
+                HemnesUp = true;
+                HoldingBoks = true;
+            }
+            if (collision.gameObject.CompareTag("HemnesSengBoks") && (Time.time - timeOfLastPickUp) >= reloadTime)
+            {
+                Destroy(collision.gameObject);
+                Vector3 BoksFromPosition = transform.position + (transform.forward * bigOffsetForward + transform.up * bigOffsetUp);
+                Vector3 Rotation = transform.rotation.eulerAngles;
+                Quaternion newRotation = Quaternion.Euler(0, Rotation.y, 90);
+                BigBoks = Instantiate(MickeBoksPrefab, BoksFromPosition, newRotation) as GameObject;
+                BigBoks.transform.parent = PlayerParent.transform;
+                Destroy(BigBoks.GetComponent<Rigidbody>());
+                myAnimator.SetBool("HoldingBoks", true);
+                HemnesSengUp = true;
                 HoldingBoks = true;
             }
         }
@@ -275,7 +421,32 @@ public class Player : MonoBehaviour{
         {
             GUI.Label(new Rect(75, 110, 200, 100), "Box content: Hemnes", guiSize);
         }
-        if (KnottenUp == false && MartinUp == false && BillyUp == false && LerhamnUp == false && HemnesUp == false)
+        if (KivikUp == true)
+        {
+            GUI.Label(new Rect(75, 110, 200, 100), "Box content: Kivik", guiSize);
+        }
+        if (MockelbyUp == true)
+        {
+            GUI.Label(new Rect(75, 110, 200, 100), "Box content: Mockelby", guiSize);
+        }
+        if (AvsiktligUp == true)
+        {
+            GUI.Label(new Rect(75, 110, 200, 100), "Box content: Avsiktlig", guiSize);
+        }
+        if (MickeUp == true)
+        {
+            GUI.Label(new Rect(75, 110, 200, 100), "Box content: Micke", guiSize);
+        }
+        if (NorrarydUp == true)
+        {
+            GUI.Label(new Rect(75, 110, 200, 100), "Box content: Norraryd", guiSize);
+        }
+        if (HemnesSengUp == true)
+        {
+            GUI.Label(new Rect(75, 110, 200, 100), "Box content: HemnesSeng", guiSize);
+        }
+
+        if (KnottenUp == false && MartinUp == false && BillyUp == false && LerhamnUp == false && HemnesUp == false && KivikUp == false && MockelbyUp == false && AvsiktligUp == false && MickeUp == false && NorrarydUp == false && HemnesSengUp == false)
         {
             GUI.Label(new Rect(75, 110, 200, 100), "Box content: Pick up an object", guiSize);
         }
@@ -285,9 +456,11 @@ public class Player : MonoBehaviour{
     {
         BigBoks.transform.parent = null;
         MediumBoks.transform.parent = null;
+        SmallBoks.transform.parent = null;
         timeOfLastPickUp = Time.time;
         BigBoks.AddComponent<Rigidbody>();
         MediumBoks.AddComponent<Rigidbody>();
+        SmallBoks.AddComponent<Rigidbody>();
         myAnimator.SetBool("HoldingBoks", false);
         HoldingBoks = false;
         KnottenUp = false;
@@ -296,6 +469,11 @@ public class Player : MonoBehaviour{
         LerhamnUp = false;
         HemnesUp = false;
         KivikUp = false;
+        MockelbyUp = false;
+        AvsiktligUp = false;
+        MickeUp = false;
+        NorrarydUp = false;
+        HemnesSengUp = false;
 
     }
     public void Kick()

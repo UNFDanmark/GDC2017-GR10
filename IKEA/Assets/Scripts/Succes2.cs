@@ -5,6 +5,9 @@ public class Succes2 : MonoBehaviour {
 
     public AudioSource myAudio;
     public AudioClip Drop;
+    public bool HemnesIsOn = false;
+    public bool KivikIsOn = false;
+    public bool NorrarydIsOn = false;
 
     // Use this for initialization
     void Start()
@@ -42,9 +45,31 @@ public class Succes2 : MonoBehaviour {
             myAudio.PlayOneShot(Drop);
             Application.LoadLevel("Fail");
         }
-        if (collision.gameObject.CompareTag("HemnesBoks") && collision.gameObject.CompareTag("KivikBoks"))
+        if (collision.gameObject.CompareTag("AvsiktligBoks"))
         {
             myAudio.PlayOneShot(Drop);
+            Application.LoadLevel("Fail");
+        }
+
+
+        if (collision.gameObject.CompareTag("HemnesBoks"))
+        {
+            myAudio.PlayOneShot(Drop);
+            HemnesIsOn = true;
+        }
+        if (collision.gameObject.CompareTag("KivikBoks"))
+        {
+            myAudio.PlayOneShot(Drop);
+            KivikIsOn = true;
+        }
+
+        if (collision.gameObject.CompareTag("NorrarydBoks"))
+        {
+            myAudio.PlayOneShot(Drop);
+            NorrarydIsOn = true;
+        }
+        if (HemnesIsOn == true && KivikIsOn == true && NorrarydIsOn == true) 
+        {
             Application.LoadLevel("SuccesScreen");
         }
 

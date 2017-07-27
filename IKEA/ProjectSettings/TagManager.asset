@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Knotten
-  - Micke
   - Billy
   - BillyBoks
   - Martin
@@ -17,6 +16,16 @@ TagManager:
   - HemnesBoks
   - Kivik
   - KivikBoks
+  - Mockelby
+  - MockelbyBoks
+  - Avsiktlig
+  - AvsiktligBoks
+  - Micke
+  - MickeBoks
+  - Norraryd
+  - NorrarydBoks
+  - HemnesSeng
+  - HemnesSengBoks
   layers:
   - Default
   - TransparentFX

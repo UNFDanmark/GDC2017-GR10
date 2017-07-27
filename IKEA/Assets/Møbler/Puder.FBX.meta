@@ -1,30 +1,22 @@
 fileFormatVersion: 2
-guid: b0fa6e7ccfc9b3f479728d12ecf30c6d
-timeCreated: 1501147443
+guid: 9e501a74614fc9f40bf6f2f16519d8ac
+timeCreated: 1501164458
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: "Lampesk\xE6rm"
-    100002: "P\xE6re"
-    100004: Stang
-    100006: //RootNode
-    400000: "Lampesk\xE6rm"
-    400002: "P\xE6re"
-    400004: Stang
-    400006: //RootNode
-    2300000: "Lampesk\xE6rm"
-    2300002: "P\xE6re"
-    2300004: Stang
-    2300006: //RootNode
-    3300000: "Lampesk\xE6rm"
-    3300002: "P\xE6re"
-    3300004: Stang
-    3300006: //RootNode
-    4300000: Firkant montering
-    4300002: "Lampesk\xE6rm"
-    4300004: Stang
-    4300006: "P\xE6re"
+    100000: Pude 1
+    100002: Pude 2
+    100004: //RootNode
+    400000: Pude 1
+    400002: Pude 2
+    400004: //RootNode
+    2300000: Pude 1
+    2300002: Pude 2
+    3300000: Pude 1
+    3300002: Pude 2
+    4300000: Pude 1
+    4300002: Pude 2
   materials:
     importMaterials: 1
     materialName: 0
@@ -49,7 +41,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 0.5
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
