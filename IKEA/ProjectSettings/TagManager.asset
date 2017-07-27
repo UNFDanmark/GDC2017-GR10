@@ -13,9 +13,10 @@ TagManager:
   - Lerhamn
   - LerhamnBoks
   - KnottenBoks
-  - Knotten1
-  - Billy1
-  - Martin1
+  - Hemnes
+  - HemnesBoks
+  - Kivik
+  - KivikBoks
   layers:
   - Default
   - TransparentFX

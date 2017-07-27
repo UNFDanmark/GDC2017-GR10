@@ -22,7 +22,7 @@ GameObject:
   - 33: {fileID: 33000011657495510}
   - 23: {fileID: 23000012070769572}
   - 65: {fileID: 65000010825215004}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: KnottenBoksPrefab
   m_TagString: KnottenBoks
   m_Icon: {fileID: 0}

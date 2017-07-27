@@ -22,7 +22,7 @@ GameObject:
   - 33: {fileID: 33000011686174456}
   - 23: {fileID: 23000013629312224}
   - 65: {fileID: 65000012368581052}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BillyBoksPrefab
   m_TagString: BillyBoks
   m_Icon: {fileID: 0}
