@@ -8,11 +8,14 @@ public class Succes2 : MonoBehaviour {
     public bool HemnesIsOn = false;
     public bool KivikIsOn = false;
     public bool NorrarydIsOn = false;
+    public GameObject KivikPic;
+    public GameObject HemnesPic;
+    public GameObject NorrarydPic;
 
     // Use this for initialization
     void Start()
     {
-        DontDestroyOnLoad(transform.gameObject);
+
     }
 
     // Update is called once per frame
@@ -27,28 +30,28 @@ public class Succes2 : MonoBehaviour {
         if (collision.gameObject.CompareTag("KnottenBoks"))
         {
             myAudio.PlayOneShot(Drop);
-            Application.LoadLevel("Fail");
+            Application.LoadLevel("FailRoom2");
         }
 
         if (collision.gameObject.CompareTag("MartinBoks"))
         {
             myAudio.PlayOneShot(Drop);
-            Application.LoadLevel("Fail");
+            Application.LoadLevel("FailRoom2");
         }
         if (collision.gameObject.CompareTag("LerhamnBoks"))
         {
             myAudio.PlayOneShot(Drop);
-            Application.LoadLevel("Fail");
+            Application.LoadLevel("FailRoom2");
         }
         if (collision.gameObject.CompareTag("BillyBoks"))
         {
             myAudio.PlayOneShot(Drop);
-            Application.LoadLevel("Fail");
+            Application.LoadLevel("FailRoom2");
         }
         if (collision.gameObject.CompareTag("AvsiktligBoks"))
         {
             myAudio.PlayOneShot(Drop);
-            Application.LoadLevel("Fail");
+            Application.LoadLevel("FailRoom2");
         }
 
 
@@ -56,23 +59,25 @@ public class Succes2 : MonoBehaviour {
         {
             myAudio.PlayOneShot(Drop);
             HemnesIsOn = true;
+            Destroy(HemnesPic.gameObject);
         }
         if (collision.gameObject.CompareTag("KivikBoks"))
         {
             myAudio.PlayOneShot(Drop);
             KivikIsOn = true;
+            Destroy(KivikPic.gameObject);
         }
 
         if (collision.gameObject.CompareTag("NorrarydBoks"))
         {
             myAudio.PlayOneShot(Drop);
             NorrarydIsOn = true;
+            Destroy(NorrarydPic.gameObject);
         }
         if (HemnesIsOn == true && KivikIsOn == true && NorrarydIsOn == true) 
         {
-            Application.LoadLevel("SuccesScreen");
+            Application.LoadLevel("MainMenu");
         }
-
-
     }
+
 }

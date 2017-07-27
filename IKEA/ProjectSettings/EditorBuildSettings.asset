@@ -6,14 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/IKEAroom1.unity
+    path: Assets/Scenes/MainMenu.unity
   - enabled: 1
-    path: Assets/Scenes/SuccesScreen.unity
+    path: Assets/Scenes/Room1/IKEAroom1.unity
   - enabled: 1
-    path: Assets/Scenes/Fail.unity
+    path: Assets/Scenes/Room1/SuccesScreen.unity
   - enabled: 1
-    path: Assets/Scenes/Fail1.unity
+    path: Assets/Scenes/Room1/Fail.unity
   - enabled: 1
-    path: Assets/Scenes/IKEAroom2.unity
+    path: Assets/Scenes/Room2/Fail1.unity
+  - enabled: 1
+    path: Assets/Scenes/Room2/IKEAroom2.unity
   - enabled: 0
     path: Assets/Scenes/IKEAroom.unity
+  - enabled: 1
+    path: Assets/Scenes/Room1/FailRoom2.unity
+  - enabled: 1
+    path: Assets/Scenes/Room2/Fail1Room2.unity
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
