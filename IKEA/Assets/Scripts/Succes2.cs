@@ -77,6 +77,7 @@ public class Succes2 : MonoBehaviour {
         if (HemnesIsOn == true && KivikIsOn == true && NorrarydIsOn == true) 
         {
             Application.LoadLevel("MainMenu");
+            Destroy(GameObject.FindWithTag("Respawn"));
         }
     }
 

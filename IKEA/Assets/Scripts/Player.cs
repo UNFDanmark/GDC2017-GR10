@@ -72,7 +72,7 @@ public class Player : MonoBehaviour{
         
         if(Timer <= 0) 
         {
-            Application.LoadLevel("FailRoom2");
+            Application.LoadLevel("Fail1Room2");
         }
 
         if(Input.GetKeyDown("z")) 
@@ -400,56 +400,56 @@ public class Player : MonoBehaviour{
     {
         GUI.contentColor = Color.black;
         guiSize.fontSize = 20;
-        GUI.Label(new Rect(75, 70, 200, 100), "Time left: " + (int)Timer, guiSize);
-        GUI.Label(new Rect(75, 133, 200, 100), "Wanted objects:", guiSize);
+        GUI.Label(new Rect(0.04f * Screen.width, 0.105f * Screen.height, 200, 100), "Time left: " + (int)Timer, guiSize);
+        GUI.Label(new Rect(0.04f * Screen.width, 0.16f * Screen.height, 200, 100), "Wanted objects:", guiSize);
         if(KnottenUp == true) 
         {
-            GUI.Label(new Rect(75, 108, 200 , 100),  "Box content: Knotten", guiSize);
+            GUI.Label(new Rect(0.04f * Screen.width, 0.13f * Screen.height, 200 , 100),  "Box content: Knotten", guiSize);
         }
         if (MartinUp == true)
         {
-            GUI.Label(new Rect(75, 108, 200, 100), "Box content: Martin", guiSize);
+            GUI.Label(new Rect(0.04f * Screen.width, 0.13f * Screen.height, 200, 100), "Box content: Martin", guiSize);
         }
         if (BillyUp == true)
         {
-            GUI.Label(new Rect(75, 108, 200, 100), "Box content: Billy", guiSize);
+            GUI.Label(new Rect(0.04f * Screen.width, 0.13f * Screen.height, 200, 100), "Box content: Billy", guiSize);
         }
         if (LerhamnUp == true)
         {
-            GUI.Label(new Rect(75, 108, 200, 100), "Box content: Lerhamn", guiSize);
+            GUI.Label(new Rect(0.04f * Screen.width, 0.13f * Screen.height, 200, 100), "Box content: Lerhamn", guiSize);
         }
         if (HemnesUp == true)
         {
-            GUI.Label(new Rect(75, 108, 200, 100), "Box content: Hemnes", guiSize);
+            GUI.Label(new Rect(0.04f * Screen.width, 0.13f * Screen.height, 200, 100), "Box content: Hemnes", guiSize);
         }
         if (KivikUp == true)
         {
-            GUI.Label(new Rect(75, 108, 200, 100), "Box content: Kivik", guiSize);
+            GUI.Label(new Rect(0.04f * Screen.width, 0.13f * Screen.height, 200, 100), "Box content: Kivik", guiSize);
         }
         if (MockelbyUp == true)
         {
-            GUI.Label(new Rect(75, 108, 200, 100), "Box content: Mockelby", guiSize);
+            GUI.Label(new Rect(0.04f * Screen.width, 0.13f * Screen.height, 200, 100), "Box content: Mockelby", guiSize);
         }
         if (AvsiktligUp == true)
         {
-            GUI.Label(new Rect(75, 108, 200, 100), "Box content: Avsiktlig", guiSize);
+            GUI.Label(new Rect(0.04f * Screen.width, 0.13f * Screen.height, 200, 100), "Box content: Avsiktlig", guiSize);
         }
         if (MickeUp == true)
         {
-            GUI.Label(new Rect(75, 108, 200, 100), "Box content: Micke", guiSize);
+            GUI.Label(new Rect(0.04f * Screen.width, 0.13f * Screen.height, 200, 100), "Box content: Micke", guiSize);
         }
         if (NorrarydUp == true)
         {
-            GUI.Label(new Rect(75, 108, 200, 100), "Box content: Norraryd", guiSize);
+            GUI.Label(new Rect(0.04f * Screen.width, 0.13f * Screen.height, 200, 100), "Box content: Norraryd", guiSize);
         }
         if (HemnesSengUp == true)
         {
-            GUI.Label(new Rect(75, 108, 200, 100), "Box content: HemnesSeng", guiSize);
+            GUI.Label(new Rect(0.04f * Screen.width, 0.13f * Screen.height, 200, 100), "Box content: HemnesSeng", guiSize);
         }
 
         if (KnottenUp == false && MartinUp == false && BillyUp == false && LerhamnUp == false && HemnesUp == false && KivikUp == false && MockelbyUp == false && AvsiktligUp == false && MickeUp == false && NorrarydUp == false && HemnesSengUp == false)
         {
-            GUI.Label(new Rect(75, 108, 200, 100), "Box content: Pick up an object", guiSize);
+            GUI.Label(new Rect(0.04f * Screen.width, 0.13f * Screen.height, 200, 100), "Box content: Pick up an object", guiSize);
         }
 
     }

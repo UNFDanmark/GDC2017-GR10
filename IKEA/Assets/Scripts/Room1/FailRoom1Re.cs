@@ -13,7 +13,7 @@ public class FailRoom1Re : MonoBehaviour {
 
     void OnGUI()
     {
-        if (GUI.Button(new Rect(815, 650, 200, 40), "Try again?"))
+        if (GUI.Button(new Rect(0.5f * Screen.width - 100, 0.65f * Screen.height, 200, 40), "Try again?"))
         {
             Application.LoadLevel("IKEAroom1");
         }

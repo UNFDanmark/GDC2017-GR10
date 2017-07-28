@@ -16,7 +16,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Room2/Fail1.unity
   - enabled: 1
-    path: Assets/Scenes/Room2/IKEAroom2.unity
+    path: Assets/Scenes/IKEAroom2.unity
   - enabled: 0
     path: Assets/Scenes/IKEAroom.unity
   - enabled: 1
@@ -25,3 +25,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Room2/Fail1Room2.unity
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
+  - enabled: 1
+    path: Assets/Scenes/Tut.unity

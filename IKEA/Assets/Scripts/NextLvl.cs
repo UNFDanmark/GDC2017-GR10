@@ -15,7 +15,7 @@ public class NextLvl : MonoBehaviour {
 
     void OnGUI()
     {
-        if (GUI.Button(new Rect(815, 650, 200, 40), "Next level"))
+        if (GUI.Button(new Rect(0.5f * Screen.width-100, 0.65f * Screen.height, 200, 40), "Next level"))
         {
             Application.LoadLevel("IKEAroom2");
         }
